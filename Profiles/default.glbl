@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>1-5 Positive, 6-7 Negative</description>
+      <initValue>1</initValue>
+      <name>Case_Num</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

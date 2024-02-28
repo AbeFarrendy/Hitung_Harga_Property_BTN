@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Hitung_Harga_Properti_NEG</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a14b9f2-fefa-4cee-935d-f63357606af9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4db6a1c7-c770-4bd1-bf27-8d7606260fef</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6da01ee5-2d83-4ad6-9a8d-971b5e2dff67</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c8e3d4f8-50b8-47cd-90ad-11b2bf48237d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('TD_Hitung_Harga_Properti').getValue(2, GlobalVariable.Case_Num)</defaultValue>
+      <description></description>
+      <id>4db6a1c7-c770-4bd1-bf27-8d7606260fef</id>
+      <masked>false</masked>
+      <name>var_Income</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('TD_Hitung_Harga_Properti').getValue(3, GlobalVariable.Case_Num)</defaultValue>
+      <description></description>
+      <id>6da01ee5-2d83-4ad6-9a8d-971b5e2dff67</id>
+      <masked>false</masked>
+      <name>var_Expense</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('TD_Hitung_Harga_Properti').getValue(4, GlobalVariable.Case_Num)</defaultValue>
+      <description></description>
+      <id>c8e3d4f8-50b8-47cd-90ad-11b2bf48237d</id>
+      <masked>false</masked>
+      <name>var_Years</name>
+   </variable>
+</TestCaseEntity>
