@@ -51,8 +51,27 @@ WebUI.click(findTestObject('Object Repository/Page_Hitung Harga Properti Maksima
 WebUI.delay(3)
 	
 String var_Result_Price = WebUI.getText(findTestObject('Page_Hitung Harga Properti Maksimal  BTN Pr_37bba6/h3_harga_hasil'))
-	
 System.out.println('Result Price (IDR): ' + var_Result_Price)
+
+String str_Result_Price = var_Result_Price.replaceAll("[^0-9]", "")
+System.out.println('str_Result_Price: ' + str_Result_Price)
+
+// VERIFY RESULT WITH FORMULA
+// (var_Income - var_Expense) * (var_Years * 12) : 3
+
+def db_Income = Double.parseDouble(var_Income)
+def db_Expense = Double.parseDouble(var_Expense)
+def db_Years = Double.parseDouble(var_Years)
+
+def var_Balance = db_Income - db_Expense
+def var_Months = 12 * db_Years
+def var_Result_Calc = var_Balance * var_Months / 3
+System.out.println('Calculated Result Price (IDR): ' + var_Result_Calc)
+
+String str_Result_Calc = String.format ("%.0f", var_Result_Calc)
+System.out.println('STR Result Calculated: ' + str_Result_Calc)
+
+WebUI.verifyEqual(str_Result_Price, str_Result_Calc)
 
 WebUI.takeScreenshot()
 
